@@ -1,3 +1,6 @@
+from models.task import Task
+from models.project import Project
+from models.user import User
 class TestProjectController:
     """Тесты для ProjectController"""
 

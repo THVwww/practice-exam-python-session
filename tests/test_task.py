@@ -4,6 +4,9 @@ import os
 from datetime import datetime, timedelta
 import tempfile
 from database.database_manager import DatabaseManager
+from models.task import Task
+from models.project import Project
+from models.user import User
 
 # Добавляем путь к модулям проекта
 sys.path.append(os.path.join(os.path.dirname(__file__), ".."))

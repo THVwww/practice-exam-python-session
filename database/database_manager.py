@@ -298,3 +298,12 @@ class DatabaseManager:
                 )
                 for r in rows
             ]
+                def create_tables(self):
+        """Создаёт все таблицы (для тестов)"""
+        self.create_user_table()
+        self.create_project_table()
+        self.create_task_table()
+
+    def close(self):
+        """Закрывает соединение (для совместимости с тестами)"""
+        pass
